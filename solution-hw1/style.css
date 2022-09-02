@@ -1,0 +1,187 @@
+.listimg {
+    width: 200px;
+    border: 3px solid black;
+}
+
+.logo {
+    width: 250px;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-bottom: 15px;
+}
+
+header {
+    border-bottom: 3px solid black;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+    font-size: 16px;
+}
+
+#list-title {
+    font-size: 20px;
+    margin: 50px 0px 20px;
+}
+
+#menu-products {
+    background-color: yellow;
+    width: fit-content;
+    padding: 2px;
+}
+
+.list {
+    width: 200px;
+    margin: 0px auto 0px auto;
+}
+
+.centered {
+    text-align: center;
+}
+
+.list-name {
+    margin-top: 1px;
+    margin-bottom: 1px;
+}
+
+.price {
+    margin-top: 1px;
+}
+
+.item-img {
+    width: 200px;
+    border: 3px solid black;
+    display: block;
+    margin-bottom: 0px;
+}
+
+.item-prices {
+    font-weight: 100;
+    font-size: 14px;
+    margin-top: 0px;
+}
+
+.item-name {
+    margin-top: 4px;
+    margin-bottom: 1px;
+}
+
+#first-child {
+    display: block;
+    pointer-events: auto;
+}
+
+#first-parent {
+    pointer-events: none;
+    width: 206px;
+    display: block;
+    border: 2px solid transparent;
+    height: 250px;
+    margin-bottom: 30px;
+}
+
+#first-parent:hover {
+    background-color: yellow;
+    font-weight: bold;
+}
+
+#second-child {
+    display: block;
+    pointer-events: auto;
+}
+
+#second-parent {
+    pointer-events: none;
+    width: 206px;
+    display: block;
+    border: 2px solid transparent;
+    height: 250px;
+    margin-bottom: 30px;
+}
+
+#second-parent:hover {
+    background-color: yellow;
+    font-weight: bold;
+}
+
+
+#third-child {
+    display: block;
+    pointer-events: auto;
+}
+
+#third-parent {
+    pointer-events: none;
+    width: 206px;
+    display: block;
+    border: 2px solid transparent;
+    height: 250px;
+    margin-bottom: 30px;
+}
+
+#third-parent:hover {
+    background-color: yellow;
+    font-weight: bold;
+}
+
+#fourth-child {
+    display: block;
+    pointer-events: auto;
+}
+
+#fourth-parent {
+    pointer-events: none;
+    width: 206px;
+    display: block;
+    border: 2px solid transparent;
+    height: 250px;
+    margin-bottom: 30px;
+}
+
+#fourth-parent:hover {
+    background-color: yellow;
+    font-weight: bold;
+}
+
+#fifth-child {
+    display: block;
+    pointer-events: auto;
+}
+
+#fifth-parent {
+    pointer-events: none;
+    width: 206px;
+    display: block;
+    border: 2px solid transparent;
+    height: 270px;
+    margin-bottom: 10px;
+}
+
+#fifth-parent:hover {
+    background-color: yellow;
+    font-weight: bold;
+}
+
+#sixth-child {
+    display: block;
+    pointer-events: auto;
+}
+
+#sixth-parent {
+    pointer-events: none;
+    width: 206px;
+    display: block;
+    border: 2px solid transparent;
+    height: 250px;
+    margin-bottom: 30px;
+}
+
+#sixth-parent:hover {
+    background-color: yellow;
+    font-weight: bold;
+}
