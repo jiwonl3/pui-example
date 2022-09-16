@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>Bun Bun bake shop!</title>
     <link rel="stylesheet" href="./style.css">
+    <script src="./script.js" defer></script>
   </head>
 
 
@@ -26,23 +27,25 @@
         <div id="detail-right">
           <p id="detail-desc">Customize our delicious, <br> hand-made cinammon roll <br> to your liking!</p>
 
-          <div id="detail-dropdown">
-            <label for="glazing" class="dropdown-label">Glazing:</label> 
-            <select name="glazing" id="glazing">
-              <option value="keep original">Keep original</option>
-              <option value="sugar milk">Sugar milk</option>
-              <option value="vanilla milk">Vanilla milk</option>
-              <option value="double chocolate">Double chocolate</option>
+          <div id="drop-down">
+            <label for="glazing">Glazing: </label>
+            <select name="glazing" id="glazing" onchange="glazingChange(this)">
+              <div class="drop-down-content">
+                <option value="keepOriginal">Keep original</option>
+                <option value="sugarMilk">Sugar milk</option>
+                <option value="vanillaMilk">Vanilla milk</option>
+                <option value="doubleChoco">Double chocolate</option>
+                </div>
             </select>
-
             <br>
-
-            <label for="pack">Pack size:</label>
-            <select name="pack" id="pack">
-              <option value="1">1</option>
-              <option value="3">3</option>
-              <option value="6">6</option>
-              <option value="12">12</option>
+            <label for="pack">Pack: </label>
+            <select name="pack" id="pack" onchange="packChange(this)">
+              <div class="drop-down-content">
+                <option value="1">1</option>
+                <option value="3">3</option>
+                <option value="6">6</option>
+                <option value="12">12</option>  
+              </div>
             </select>
           </div>
   

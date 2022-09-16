@@ -211,24 +211,21 @@ a {
     border: 2px solid black;
 }
 
-#detail-desc{
+#detail-right {
     font-size: 20px;
-    margin-bottom: 100px;
-}
-
-#detail-dropdown{
     display: flex;
     flex-direction: column;
-    gap: 5px;
+    gap: 60px;
+    justify-content: center;
 }
 
-#glazing {
-    background-color: transparent;
-    border: 2px solid black;
+#drop-down {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
 
-#pack {
-    background-color: transparent;
+select {
     border: 2px solid black;
 }
 
@@ -237,7 +234,6 @@ a {
     align-items: center;
     gap: 20px;
     justify-content: flex-end;
-    margin-top: 100px;
 }
 
 #addtocart {
