@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Bun Bun bake shop!</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="./rollsData.js" defer></script>
+    <script src="./scriptCart.js" defer></script>
+  </head>
+
+
+  <body>
+    <header>
+      <a href="./index.html"><img class="logo" src="./logo/logo-01.svg" alt="Bun Bun Bake Shop Logo"></a>
+      <div id="right-header">
+        <div id="menu">
+          <a href="./index.html">PRODUCTS</a>
+          <a id="menu-cart" href="./cart.html">CART</a>
+        </div>
+        <hr class="menu-bar">
+        <p id="list-title">Shopping cart</p>
+      </div>
+    </header>
+
+
+    <div id="cart-list">
+      <img id="empty-space" src="./logo/logo-01.svg" alt="empty space"></a>
+      <div id="cart-itemlist">
+        <div id="cart-display-here"></div>
+        <template id="cart-template">
+          <div class="cart-item">
+            <div class="cart-item-firstrow"> 
+              <img class="cartimg" src="./products/original-cinnamon-roll.jpg" alt="original cinnamon roll">
+              <div class="cart-name">
+                <p id="cart-name-name" class="cart-name-elem"></p> 
+                <p id="cart-name-glaze" class="cart-name-elem"></p>
+                <p id="cart-name-pack" class="cart-name-elem"></p>  
+              </div>
+              <p id = "cart-name-price" class="price">$ 2.49</p>   
+            </div>
+      
+            <div class="cart-item-secondrow">
+              <button class="remove">Remove</button>
+            </div>
+          </div>
+        </template>
+        <hr class="menu-bar">
+        
+        <div id="cart-price">
+          <div id="cart-price-firstrow">
+            <p id="price-label">Total</p>
+            <p id="total-price" class="price">$29.94</p>
+          </div>
+          <div id="cart-price-secondrow">
+            <button id="checkout"><b>Checkout</b></button>
+          </div>
+      </div>
+    </div>
+  </body>
+</html>

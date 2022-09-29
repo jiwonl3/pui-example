@@ -63,16 +63,16 @@ headerElement.innerText = chosenRoll + ' Cinnamon Roll';
 
 
 //FROM HERE!!! 
-let jsondata = '{"Original": {"basePrice": 2.49,"imageFile": "original-cinnamon-roll.jpg"},"Apple": {"basePrice": 3.49,"imageFile": "apple-cinnamon-roll.jpg"},"Raisin": {"basePrice": 2.99,"imageFile": "raisin-cinnamon-roll.jpg"},"Walnut": {"basePrice": 3.49,"imageFile": "walnut-cinnamon-roll.jpg"},"Double-Chocolate": {"basePrice": 3.99, "imageFile": "double-chocolate-cinnamon-roll.jpg"},"Strawberry": {"basePrice": 3.99,"imageFile": "strawberry-cinnamon-roll.jpg"}}';
-myObj = JSON.parse(jsondata);
+// let jsondata = '{"Original": {"basePrice": 2.49,"imageFile": "original-cinnamon-roll.jpg"},"Apple": {"basePrice": 3.49,"imageFile": "apple-cinnamon-roll.jpg"},"Raisin": {"basePrice": 2.99,"imageFile": "raisin-cinnamon-roll.jpg"},"Walnut": {"basePrice": 3.49,"imageFile": "walnut-cinnamon-roll.jpg"},"Double-Chocolate": {"basePrice": 3.99, "imageFile": "double-chocolate-cinnamon-roll.jpg"},"Strawberry": {"basePrice": 3.99,"imageFile": "strawberry-cinnamon-roll.jpg"}}';
+// myObj = JSON.parse(jsondata);
 
 
 // Update the image
 const rollImage = document.querySelector('#detail-img');
-rollImage.src = './products/' + myObj[chosenRoll].imageFile;
+rollImage.src = './products/' + rolls[chosenRoll].imageFile;
 
 // Update the price
-basePrice = myObj[chosenRoll].basePrice;
+basePrice = rolls[chosenRoll].basePrice;
 priceTag.innerText = '$' + basePrice;
 
 
@@ -87,8 +87,6 @@ class Roll {
 }
 
 const btnCart = document.querySelector('#addtocart');
-
-
 
 btnCart.onclick = function clickCart() {
     saveThis = new Roll(chosenRoll, chosenGlazing, chosenPack, basePrice);
