@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Bun Bun bake shop!</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="./rollsData.js" defer></script>
+    <script src="./script.js" defer></script>
+  </head>
+
+
+  <body>
+    <header>
+      <a href="./index.html"><img class="logo" src="./logo/logo-01.svg" alt="Bun Bun Bake Shop Logo"></a>
+      <div id="right-header">
+        <div id="menu">
+          <a id="menu-products" href="./index.html">PRODUCTS</a>
+          <a href="./cart.html">CART</a>
+        </div>
+        <hr class="menu-bar">
+        <p id="list-title">Original cinnamon roll</p>
+      </div>
+    </header>
+
+      <div id="detail-view" >
+        <img id="detail-img" src="./products/original-cinnamon-roll.jpg" alt="original cinnamon roll">
+        
+        <div id="detail-right">
+          <p id="detail-desc">Customize our delicious, <br> hand-made cinammon roll <br> to your liking!</p>
+
+          <div id="drop-down">
+            <label for="glazing">Glazing: </label>
+            <select name="glazing" id="glazing" onchange="glazingChange(this)">
+              <div class="drop-down-content">
+                <option value="keepOriginal">Keep original</option>
+                <option value="sugarMilk">Sugar milk</option>
+                <option value="vanillaMilk">Vanilla milk</option>
+                <option value="doubleChoco">Double chocolate</option>
+                </div>
+            </select>
+            <br>
+            <label for="pack">Pack: </label>
+            <select name="pack" id="pack" onchange="packChange(this)">
+              <div class="drop-down-content">
+                <option value="1">1</option>
+                <option value="3">3</option>
+                <option value="6">6</option>
+                <option value="12">12</option>  
+              </div>
+            </select>
+          </div>
+  
+          <div id="detail-price">
+            <p id="detail-section-price"></p>
+            <button id="addtocart"><b>Add to Cart</b></button>
+          </div>
+        </div>
+      </div>
+  </body>
+</html>

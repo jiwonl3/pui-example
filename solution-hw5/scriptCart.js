@@ -4,19 +4,20 @@ const tempSet = new Set();
 
 
 //ONLY FOR HW5, IN HW6 YOU HAVE TO DELETE THIS CODE AND BRING FINAL PRICE IN DETAIL PAGE!
-const glazePriceAdpatation = {
-    'Original' : 0 ,
-    'Sugar Milk': 0 ,
-    'Vanilla Milk' : 0.5 
-}
-
 const packPriceAdaptation = {
     '1' : 1,
     '3' : 3,
     '6' : 5,
     '12': 10
 }
-//
+
+const glazePriceAdpatation = {
+    'Original' : 0 ,
+    'Sugar Milk': 0 ,
+    'Vanilla Milk' : 0.5,
+    'Double Chocolate' : 1.5
+}
+
 
 
 class Roll {

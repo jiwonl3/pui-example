@@ -1,7 +1,7 @@
 const dropGlazing = document.querySelector('#glazing');
 const dropPack = document.querySelector('#pack');
 let basePrice = Number(2.49)
-let chosenGlazing = "KeepOriginal"
+let chosenGlazing = "Keep original"
 let chosenPack = "1"
 let priceTag = document.querySelector("#detail-section-price");
 priceTag.innerText = "$" + basePrice
