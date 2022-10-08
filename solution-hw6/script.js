@@ -5,8 +5,7 @@ let chosenGlazing = "Keep original"
 let chosenPack = "1"
 let priceTag = document.querySelector("#detail-section-price");
 priceTag.innerText = "$" + basePrice
-cart = [];
-
+let cart = [];
 
 const priceAdaption =
 {
@@ -78,20 +77,33 @@ class Roll {
     }
 }
 
+
+let cartStoredArray= [];
+if (localStorage.getItem("userCart") != null) {
+    console.log("print");
+    let storagedString = localStorage.getItem("userCart");
+    cartStoredArray = JSON.parse(storagedString);
+    console.log(cartStoredArray);
+}
+
+
 const btnCart = document.querySelector('#addtocart');
 
 btnCart.onclick = function clickCart() {
     saveThis = new Roll(chosenRoll, chosenGlazing, chosenPack, basePrice);
     // console.log(saveThis);
     cart.push(saveThis);
+    console.log(cart);
     // console.log(cart);
-    saveToLocalStorage();
+    let cartCombine = [...cart,...cartStoredArray];
+    console.log(cartCombine);
+    saveToLocalStorage(cartCombine);
 }
 
-function saveToLocalStorage() {
-    let cartArray = Array.from(cart);
+function saveToLocalStorage(cartCombine) {
+    let cartArray = Array.from(cartCombine);
     console.log(cartArray);
-    const cartArrayString = JSON.stringify(cartArray);
+    const cartArrayString = JSON.stringify(cartCombine);
     localStorage.setItem("userCart",cartArrayString);
     console.log(localStorage);
 }

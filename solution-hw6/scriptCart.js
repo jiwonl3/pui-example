@@ -31,34 +31,17 @@ class Roll {
     }
 }
 
-// function addNewCart(rollType, rollGlazing, packSize, rollPrice) {
-//     const cartItem = new Roll(rollType, rollGlazing, packSize, rollPrice);
-//     tempSet.add(cartItem);
-//     return cartItem;
-// }
 
-cartArrayString = localStorage.getItem("userCart");
-cartArray = JSON.parse(cartArrayString);
+let cartArrayString = localStorage.getItem("userCart");
+let cartArray = JSON.parse(cartArrayString);
 console.log(cartArray);
 
-for (const cartItem of cartArray) {;
-    createElement(cartItem);
+if (cartArray!=null) {
+    for (const cartItem of cartArray) {;
+        createElement(cartItem);
+    }
 }
 
-// function retrieveFromLocalStorage() {
-//     const cartArrayString = localStorage.getItem("userCart");
-//     const cartArray = JSON.parse(cartArrayString);
-//     console.log(cartArray);
-//     for (const cartItem of cartArray) {;
-//         createElement(cartItem);
-//     }
-// }
-
-
-// for (const cartItem of cartFromLocalStorage) {
-//     createElement(cartItem);
-
-// } 
 
 function createElement(cartItem) {
     const template = document.querySelector('#cart-template');
